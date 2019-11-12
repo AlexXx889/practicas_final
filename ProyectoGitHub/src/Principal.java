@@ -61,6 +61,7 @@ public class Principal {
 		System.out.println("Elige una opcion de las propuestas a continuacion/n/n");
 		System.out.println("0.- Presentacion (Camilo Juan)");
 		System.out.println("2.-  Exercici 02 (Hector Lopez)");
+		System.out.println("4.-  Ejercicio 01 (Alex Mihalache)");
 		System.out.println("11.- Ejercicio11 (Carlos Moles Valdivieso)");
 		System.out.println("12.- Ejercicio12 (Carlos Mota)");
      System.out.println("13.- Ejercicio13 (Javier Soler Artero)")
@@ -122,6 +123,7 @@ public class Principal {
             ejercicio03();
 			break;
 		case 4:
+			actividad1();	
 			break;
 		case 5:
 			break;
@@ -860,4 +862,24 @@ public class ejercicio16 {
 
 		} while (pedir = false);
 	}
+}
+public class actividad1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x=1, y=1;
+		long tabla=actividad1_1.tablas(x,y);
+	}
+	static int tablas (int a, int b) {
+		
+		for(int x=1; x<=10; x++) {
+			System.out.println("------Tabla del "+x+"------");
+			
+			for (int y=1; y<=10; y++) {
+				System.out.println(x+"*"+y+"="+x*y);
+			}
+		}
+		return a & b;
+	}
+
 }
